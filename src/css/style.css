@@ -1,0 +1,236 @@
+*{
+    --cor-um: #D26A1B;
+    --cor-um-transparente: #d26a1b7c;
+    --cor-dois: #523723c5;
+    --cor-dois-full: #523723;
+}
+header nav{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--cor-dois);
+    backdrop-filter: blur(1px);
+    width: 100%;
+    z-index: 2;
+}
+header nav a img{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    top: 0.75rem;
+    left: 2rem;
+    width: 15%;
+    height: 3rem;
+}
+.navBar-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1.7rem 0.5rem;
+    transition: all 0.3s;
+}
+.navBar-link:hover{
+    background-color: var(--cor-um);
+    font-weight: 700;
+    color: var(--cor-dois-full);
+}
+header img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: top;
+}
+main{
+    width: 70%;
+    border-left: 4px solid;
+    border-color: var(--cor-dois-full);
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+    padding-left: 2.5rem;
+    color: var(--cor-dois-full);
+}
+main section{
+    text-align: left;
+    margin: 2.5rem 0;
+}
+main section h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.lances{
+    overflow: auto;
+    white-space: nowrap;
+    height: 560px;
+    width: 90%;
+    min-width: 17.5em;
+}
+.boxVideo {
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    margin: 1rem auto -16.5% auto;
+}
+.boxVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+}
+.imagens, .jogadores-importantes{
+    margin-left: 15%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 70%;
+    height: 470px;
+}
+.imagens span, .jogadores-importantes span{
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+.imagens span p, .jogadores-importantes span p{
+    color: gray;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+.imagens span img, .jogadores-importantes span img{
+    object-fit: cover;
+    object-position: center;
+    height: 400px;
+    width: 400px;
+}
+.records{
+    padding: 1rem;
+    height: 52rem;
+    overflow-y: auto;
+}
+*::-webkit-scrollbar{
+    width: 12px;
+}
+*::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--cor-um-transparente);
+    border-radius: 15px;
+    transition: all 1s;
+}
+*::-webkit-scrollbar-thumb:hover{
+    background-color: var(--cor-um);
+}
+.card{
+    width: 25%;
+    height: 20rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.2);
+    margin-right: 3rem;
+    overflow: auto;
+}
+.icon-records img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card legend{
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.contato form{
+    display: flex;
+    flex-direction: column;
+}
+.contato form input{
+    height: 2rem;
+}
+.contato form input, textarea{
+    font-family: 'Urbanist', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    filter:drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.15));
+    width: 70%;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+::placeholder{
+    font-family: 'Urbanist', sans-serif;
+    padding: 0.3rem 0.7rem;
+}
+.btn-form{
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    filter:drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.15));
+    margin: 1rem 0;
+    width: 100px;
+    height: 40px;
+    background-color: var(--cor-um);
+    color: var(--cor-dois-full);
+}
+footer p{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    top: 10rem;
+    color: #ffffff;
+}
+footer img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: top;
+}
+.aside{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20rem;
+    right: 2.5rem;
+    width: 20%;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+    border: none;
+    border-radius: 15px;
+    padding: 1.5rem 0;
+    background-color: var(--cor-um);
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.2);
+}
+.aside legend{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-dois-full);
+}
+.aside div{
+    display: flex;
+    flex-direction: column;
+}
+.aside div a{
+    margin-top:1rem;
+    text-decoration: none;
+    font-size: 400;
+    color: var(--cor-dois-full);
+}
+
+hr{
+    border: 2px solid var(--cor-dois-full);
+    border-radius: 15px;
+}
