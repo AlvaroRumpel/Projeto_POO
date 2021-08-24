@@ -1,5 +1,5 @@
 # Projeto_POO
-## Basquete é vida
+## Basquete para viver
 
 Sistema HTML e JavaScript
 Ideia prática
