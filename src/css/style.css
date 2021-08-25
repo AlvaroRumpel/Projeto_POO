@@ -201,14 +201,42 @@ li{
     width: 100px;
     height: 40px;
     background-color: var(--cor-um);
-    color: var(--cor-dois-full);
+    color: white;
 }
 footer p{
     position: relative;
     display:flex;
     justify-content: center;
     top: 10rem;
+    margin: 0.5rem 0;
     color: #ffffff;
+}
+.fraco{
+    font-weight: 300;
+    font-size: 0.85rem;
+    color: #ffffff77;
+}
+.forte{
+    text-transform: uppercase;
+    text-align: center;
+    left: 37.5%;
+    margin: 1rem 0;
+    font-weight: 700;
+    width: 25%;
+}
+.icones{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 12rem;
+}
+.icones a{
+    text-decoration: none;
+    margin: 0 1rem;
+}
+.icones a img{
+    width: 2rem;
+    height: 2rem;
 }
 footer img{
     width: 100%;
@@ -237,7 +265,7 @@ footer img{
 .aside legend{
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--cor-dois-full);
+    color: white;
 }
 .aside div{
     display: flex;
@@ -247,7 +275,7 @@ footer img{
     margin-top:1rem;
     text-decoration: none;
     font-size: 400;
-    color: var(--cor-dois-full);
+    color: white;
 }
 
 hr{
