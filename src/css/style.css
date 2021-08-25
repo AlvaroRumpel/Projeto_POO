@@ -23,6 +23,9 @@ header nav a img{
     width: 15%;
     height: 3rem;
 }
+.margin{
+    padding: 1.7rem 4rem;
+}
 .navBar-link{
     text-decoration: none;
     font-size: 1.2rem;
