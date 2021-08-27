@@ -23,6 +23,9 @@ header nav a img{
     width: 15%;
     height: 3rem;
 }
+.margin{
+    padding: 1.7rem 4rem;
+}
 .navBar-link{
     text-decoration: none;
     font-size: 1.2rem;
@@ -42,14 +45,13 @@ header img{
     object-position: top;
 }
 main{
-    width: 70%;
+    width: 60%;
     border-left: 4px solid;
     border-right: 4px solid;
     border-color: var(--cor-dois-full);
     border-radius: 10px;
-    margin-top: 3rem;
-    margin-left: 2.5rem;
-    padding-left: 2.5rem;
+    margin: 2rem 4rem;
+    padding: 0 2rem;
     color: var(--cor-dois-full);
 }
 main section{
@@ -145,17 +147,16 @@ li{
     background-color: var(--cor-um);
 }
 .card{
-    width: 25%;
+    width: 12rem;
     height: 20rem;
     display: inline-block;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 1rem;
-    padding: 2rem 1rem;
+    margin: 1rem 1rem 0 0;
+    padding: 2rem 2rem;
     border-radius: 15px;
     box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.2);
-    margin-right: 3rem;
     overflow: auto;
 }
 .icon-records img{
@@ -188,7 +189,6 @@ li{
 }
 ::placeholder{
     font-family: 'Urbanist', sans-serif;
-    padding: 0.3rem 0.7rem;
 }
 .btn-form{
     cursor: pointer;
@@ -251,7 +251,7 @@ footer img{
     justify-content: center;
     align-items: center;
     top: 20rem;
-    right: 2.5rem;
+    right: 5rem;
     width: 20%;
     margin-top: 3rem;
     margin-left: 2.5rem;
