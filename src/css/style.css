@@ -30,13 +30,16 @@ header nav a img{
     text-decoration: none;
     font-size: 1.2rem;
     color: white;
-    padding: 1.7rem 0.5rem;
+    padding: 1.6rem 0.5rem;
     transition: all 0.3s;
 }
 .navBar-link:hover{
     background-color: var(--cor-um);
     font-weight: 700;
     color: var(--cor-dois-full);
+}
+.navBar-link:active{
+    color: #000;
 }
 header img{
     width: 100%;
@@ -156,8 +159,14 @@ li{
     margin: 1rem 1rem 0 0;
     padding: 2rem 2rem;
     border-radius: 15px;
+    background-color: #f3f3f3;
     box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.2);
     overflow: auto;
+    transition: all 0.3s;
+}
+.card:hover{
+    background-color: #ffff;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.5);
 }
 .icon-records img{
     width: 7rem;
@@ -183,9 +192,15 @@ li{
     border: none;
     border-radius: 15px;
     filter:drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.15));
+    background-color: #f9f9f9;
     width: 70%;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+.contato form input:focus, textarea:focus{
+    background-color: #fff;
+
 }
 ::placeholder{
     font-family: 'Urbanist', sans-serif;
@@ -202,6 +217,13 @@ li{
     height: 40px;
     background-color: var(--cor-um);
     color: white;
+    transition: all 0.3s;
+}
+.btn-form:hover{
+    filter:drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.35));
+}
+.btn-form:active{
+    background-color: var(--cor-dois-full);
 }
 footer p{
     position: relative;
@@ -261,6 +283,10 @@ footer img{
     background-color: var(--cor-um);
     box-shadow: 1rem 1rem 0.7rem rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transition: all 0.3s;
+}
+.aside:hover{
+    box-shadow: 1rem 1rem 0.7rem rgba(0, 0, 0, 0.4);
 }
 .aside legend{
     font-size: 1.5rem;
@@ -276,8 +302,15 @@ footer img{
     text-decoration: none;
     font-size: 400;
     color: white;
+    transition: all 0.3s;
 }
-
+.aside div a:hover{
+    text-decoration: underline;
+}
+.aside div a:active{
+    color: #000;
+    text-decoration: underline;
+}
 hr{
     background-color: var(--cor-dois-full);
     border: 2px solid var(--cor-dois-full);
