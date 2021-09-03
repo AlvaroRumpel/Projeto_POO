@@ -7,30 +7,32 @@
 header nav{
     position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--cor-dois);
     backdrop-filter: blur(1px);
     width: 100%;
     z-index: 2;
 }
-header nav a img{
-    position: absolute;
+.logo{
+    display: flex;
+    margin-left: 2%;
+    flex-grow: 1;
+}
+.logo img{
     object-fit: cover;
     object-position: center;
-    top: 0.75rem;
-    left: 2rem;
-    width: 15%;
+    width: 40%;
     height: 3rem;
 }
 .margin{
-    padding: 1.7rem 4rem;
+    padding: 1.7rem 3%;
 }
 .navBar-link{
     text-decoration: none;
     font-size: 1.2rem;
     color: white;
-    padding: 1.7rem 0.5rem;
+    padding: 1.6rem 0.5rem;
     transition: all 0.3s;
 }
 .navBar-link:hover{
@@ -38,9 +40,12 @@ header nav a img{
     font-weight: 700;
     color: var(--cor-dois-full);
 }
-header img{
+.navBar-link:active{
+    color: #000;
+}
+.background{
     width: 100%;
-    height: 20rem;
+    height: 250px;
     object-fit: cover;
     object-position: top;
 }
@@ -127,9 +132,11 @@ li{
     border-radius: 15px;
 }
 .records{
-    padding: 1rem;
+    padding: 0;
     height: 52rem;
     overflow-y: auto;
+    display: flex;
+    flex-flow: row wrap;
 }
 *::-webkit-scrollbar{
     width: 12px;
@@ -147,17 +154,21 @@ li{
     background-color: var(--cor-um);
 }
 .card{
-    width: 12rem;
-    height: 20rem;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    width: 23%;
+    height: 17rem;
     text-align: center;
     margin: 1rem 1rem 0 0;
     padding: 2rem 2rem;
     border-radius: 15px;
-    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.2);
+    background-color: #f3f3f3;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2);
     overflow: auto;
+    transition: all 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+    background-color: #ffff;
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
 }
 .icon-records img{
     width: 7rem;
@@ -183,9 +194,15 @@ li{
     border: none;
     border-radius: 15px;
     filter:drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.15));
+    background-color: #f9f9f9;
     width: 70%;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+.contato form input:focus, textarea:focus{
+    background-color: #fff;
+
 }
 ::placeholder{
     font-family: 'Urbanist', sans-serif;
@@ -202,12 +219,19 @@ li{
     height: 40px;
     background-color: var(--cor-um);
     color: white;
+    transition: all 0.3s;
+}
+.btn-form:hover{
+    filter:drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.35));
+}
+.btn-form:active{
+    background-color: var(--cor-dois-full);
 }
 footer p{
     position: relative;
     display:flex;
     justify-content: center;
-    top: 10rem;
+    top: 20%;
     margin: 0.5rem 0;
     color: #ffffff;
 }
@@ -228,7 +252,7 @@ footer p{
     position: relative;
     display: flex;
     justify-content: center;
-    top: 12rem;
+    top: 25%;
 }
 .icones a{
     text-decoration: none;
@@ -238,9 +262,17 @@ footer p{
     width: 2rem;
     height: 2rem;
 }
+footer{
+    display:flex;
+    flex-flow: column wrap;
+    background-image: url(https://www.soninha.com.br/camara/wp-content/uploads/2018/04/Basket-ball-basquete-cesta-Papel-de-parede.jpg);
+    background-color: #000;
+    background-size: cover;
+    padding: 5%;
+}
 footer img{
     width: 100%;
-    height: 20rem;
+    height: 20%;
     object-fit: cover;
     object-position: top;
 }
@@ -250,19 +282,22 @@ footer img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 20rem;
-    right: 5rem;
+    top: 20%;
+    right: 2%;
     width: 20%;
-    margin-top: 3rem;
-    margin-left: 2.5rem;
     border: none;
     border-radius: 15px;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     background-color: var(--cor-um);
     box-shadow: 1rem 1rem 0.7rem rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transition: all 0.3s;
+}
+.aside:hover{
+    box-shadow: 1rem 1rem 0.7rem rgba(0, 0, 0, 0.4);
 }
 .aside legend{
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
@@ -276,10 +311,115 @@ footer img{
     text-decoration: none;
     font-size: 400;
     color: white;
+    transition: all 0.3s;
 }
-
+.aside div a:hover{
+    text-decoration: underline;
+}
+.aside div a:active{
+    color: #000;
+    text-decoration: underline;
+}
 hr{
     background-color: var(--cor-dois-full);
     border: 2px solid var(--cor-dois-full);
     border-radius: 25px;
+}
+
+
+@media (max-width: 768px){
+    header nav {
+        position: absolute;
+        flex-flow: column wrap;
+        padding: 10px 0;
+    }
+    .logo{
+        display: flex;
+        margin-left: 0;
+        width: 100%;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .logo img{
+        height: 4rem;
+    }
+    .margin{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .navBar-link{
+        text-align: center;
+        padding: 0.2rem 0;
+    }
+    main{
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    main section{
+        margin: 2.5rem 8%;
+    }
+    .imagens, .jogadores-importantes{
+        /* margin-left: 15%; */
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+    .imagens span, .jogadores-importantes span{
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+    .imagens span p, .jogadores-importantes span p{
+        color: gray;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 1rem;
+    }
+    .imagens span img, .jogadores-importantes span img{
+        object-fit: cover;
+        object-position: center;
+        height: 150px;
+        width: 150px;
+        border-radius: 15px;
+    }
+    .records{
+        padding: 0;
+        height: 40rem;
+    }
+    .card{
+        width: 100%;
+        margin: 2% 2% 0 0;
+        padding: 4% 4%;
+    }
+    .card:nth-child(3n+1){
+        margin: 0% 2% 0 0;
+    }
+    .icon-records img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .contato form input, textarea{
+        width: calc(100% - 2rem);
+        padding: 0.5rem 0 0.5rem 1rem;
+    }
+    .btn-form{
+        width: 100%;
+    }
+    footer{
+        display:flex;
+        flex-flow: column wrap;
+        background-image: url(https://www.soninha.com.br/camara/wp-content/uploads/2018/04/Basket-ball-basquete-cesta-Papel-de-parede.jpg);
+        background-color: #000;
+        background-size: cover;
+        padding: 5%;
+    }
+    .aside{
+        display:none;
+    }
 }
